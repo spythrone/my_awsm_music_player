@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Webpage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="responsive.css">
+</head>
+<body>
+    <div class="bg img1">
+	<nav>
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">home</a>
+ 	    
+             <div class="dropdown">
+                 <button class="dropbtn">playlist</button>
+                    <div class="dropdown-content">
+			  <a href="#">song 1</a>
+			  <a href="#">song 2</a>
+			  <a href="#">song 3</a>
+                     </div>
+            </div> 
+           <a href="#about">About</a>
+	   
+	   
+           <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+	   <div class="right" id="myTopnav">
+   	        <a href="#">Search</a>
+		<a href="#">Login</a>
+	        <a href="#">Register</a>
+	   </div>
+	   
+        </div>
+      </nav>
+    </div>
+	
+    <div class="bg img2"></div>
+    <div class="bg img3"></div>	
+	
+
+
+    <div id="header"><h1>LETS THE MUSIC PLAY!!!</h1><div>
+    <div class="content">
+        <audio controls>
+	    <source src="/home/slowpoke/Music/phirleaya.mp3.ogg" type="audio/ogg">
+	    <source src="/home/slowpoke/Music/phirleaya.mp3" type="audio/mpeg">
+	</audio>
+    </div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>
